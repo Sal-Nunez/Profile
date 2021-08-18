@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sob {
+    padding-left: 220px;
+}
+button {
+    color: white;
+    background-color: teal;
+    border-style: none;
+    padding: 5px 10px;
+}
+.bod {
+    display: flex;
+    justify-content: center;
+}
+.left {
+    background-color: white;
+    width: 400px;
+    height: 700px;
+    margin: 25px 12.5px;
+}
+h2 {
+    background: teal;
+    width: 406px;
+    height: 100px;
+    margin-top: -11px;
+    margin-left: -3px;
+}
+.right {
+    background-color: white;
+    width: 250px;
+    height: 700px;
+    margin: 25px 12.5px;
+}
+.topleft {
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border: grey 3px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#Jane {
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.jdoe {
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+p {
+    margin-left: 25px;
+    font-weight: bold;
+}
+#gear {
+    height: 18px;
+    vertical-align: middle;
+}
+.botleft {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin-top: 25px;
+    border: grey 3px solid;
+    border-top: black solid 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.topright {
+    background-color: white;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: grey 3px solid;
+}
+#two {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    padding: 0px 5px;
+}
+.blackh {
+    background: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: -3px;
+}
+.con {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+#edu {
+    margin-top: -26px;
+    text-align: left;
+    padding: 10px 25px;
+
+}
+.date {
+    color: grey;
+    font-weight: normal;
+}
+#cr {
+    margin-left: 10px;
+}
+.botright {
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin-top: 25px;
+    border: grey 3px solid;
+}
+#fihunit {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    padding: 0px 5px;
+    margin-right: 15px;
+}
+.bri {
+    margin-left: -10px;
+    margin-right: 20px;
+    vertical-align: middle;
+    height: 50px;
+    margin-top: 5px;
+}
+.brl {
+    background-color: white;
+    border-top: grey solid 3px;
+    margin-left: 0px;
+    margin-top: 5px;
+    padding-top: 7px;
+}
+.last {
+    margin-left: 15px;
+}
