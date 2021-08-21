@@ -24,7 +24,7 @@
                 <div class="topleft">
                     <h2><img id="Jane" src="img\jane-m.jpg" alt="Jane Doe" width="100px"></h2>
                     <!-- Jane Doe -->
-                    <p class="jdoe">Jane Doe</p>
+                    <p class="jdoe" id="profileName">Jane Doe</p>
                     <p class="seattle">
                     <img src="img\map-marker.png" alt="Map Marker" height="25px">Seattle
                     </p>
@@ -37,10 +37,7 @@
                         </p>
                     </div>
                     <p>
-                        <a href="http://www.google.com">
-                        <img id="gear" src="img\gear.png" alt="gear icon">
-                        </a>
-                        <a href="http://www.google.com" id="gear">edit profile</a>
+                        <p onclick="replace(document.querySelector('#profileName'))"><img id="gear" src="img\gear.png" alt="gear icon"><span id="editprofile"> edit profile</span></p>
                     </p>
                 </div>
                 <div class="botleft">
@@ -59,20 +56,20 @@
                 <div class="topright">
                     <!-- connection requests -->
                     <p class="blackh"><span id="two">2</span><span id="cr">Connection Requests</span></p>
-                    <p class="con">
+                    <p class="con" id="Todd">
                         <img src="img\todd-s.jpg" alt="Todd E" height="50px"> Todd E
-                        <img src="img\accept-circle.png" alt="accept" height="25px">
-                        <img src="img\close-circle.png" alt="reject" height="25px">
-                        <div class="con">
+                        <img onclick="addConnection(document.querySelector('#numberOfConnections', this)); remove(document.querySelector('#Todd')); subtractConnectionRequests(document.querySelector('#two'))" src="img\accept-circle.png" alt="accept" height="25px">
+                        <img onclick="remove(document.querySelector('#Todd')); subtractConnectionRequests(document.querySelector('#two'))" src="img\close-circle.png" alt="reject" height="25px">
+                        <div class="con" id="Phil">
                             <img src="img\phil-s.jpg" alt="Phil K" height="50px"> Phil K
-                            <img src="img\accept-circle.png" alt="accept" height="25px">
-                            <img src="img\close-circle.png" alt="reject" height="25px">
+                            <img onclick="addConnection(document.querySelector('#numberOfConnections', this)); remove(document.querySelector('#Phil')); subtractConnectionRequests(document.querySelector('#two'))"  src="img\accept-circle.png" alt="accept" height="25px">
+                            <img onclick="remove(document.querySelector('#Phil')); subtractConnectionRequests(document.querySelector('#two'))" src="img\close-circle.png" alt="reject" height="25px">
                         </div>
                     </p>
                 </div>
                 <div class="botright">
                     <!-- your connections -->
-                    <p class="blackh"><span id="fihunit">500+</span> Your Connections</p>
+                    <p class="blackh"><span id="fihunit"><span id="numberOfConnections">500</span>+</span>Your Connections</p>
                     <p id="topcon">
                         <img class="bri" src="img\adrien-s.jpg" alt="Adrien D" height="50px"> Adrien D
                     </p>
@@ -83,5 +80,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
+

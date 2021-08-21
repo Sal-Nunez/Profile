@@ -65,6 +65,11 @@ p {
 #gear {
     height: 18px;
     vertical-align: middle;
+    margin-bottom: 10px;
+}
+#editprofile {
+    text-decoration: underline;
+    color: #1a0dab;
 }
 .botleft {
     background-color: white;
